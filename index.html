@@ -51,11 +51,17 @@ TikTok: rayyarr_
   	    else if(flag==2){Bn.style="margin-left:95px;transform: rotate(90deg)";document.getElementById("buttonv2").innerHTML = tekstolak22;flag=3}
   	    else if(flag==3){Bn.style="margin:12px 8px 12px 0";buttonv2.style="opacity:0;";By.style="opacity:1";tolakteks();flag=1}
          }
+         else if(fungsi==3){
+      	if(flag==1){Bn.style="margin-left:90px;";buttonv2.style="opacity:1;";By.style="opacity:0";document.getElementById("buttonv2").innerHTML = tekstolak1;flag=2}
+  	    else if(flag==2){Bn.style="margin-left:95px;transform: rotate(90deg)";document.getElementById("buttonv2").innerHTML = tekstolak33;flag=3}
+  	    else if(flag==3){Bn.style="margin:12px 8px 12px 0";buttonv2.style="opacity:0;";By.style="opacity:2";tolakteks();flag=1}
+         }
    }
         
     tekstolak1 = "Eits &#128541;";tekstolak11 = "Yakin?";
-    tekstolak2 = "Gabisa wlee &#128541;";tekstolak22 = "Eits &#128541;";
-    
+    tekstolak2 = "Ga kena &#128541;";tekstolak22 = "Eits &#128541;";
+    tekstolak3 = "Gabisa wlee &#128541;";tekstolak33 = "Eits &#128541;";
+   
     fungsi=1;
     async function terima(){
     if(fungsi==1){terimateks();befanimkata();contTom.style="display:none";}
@@ -84,7 +90,7 @@ TikTok: rayyarr_
                 if(nama && nama.length < 11){
                 	window.nama = nama;lanjut();play();
                 } else {
-                    await swals.fire('Ups!', 'Nama tidak boleh kosong atau lebih dari 10 karakter, ya!');mulai();
+                    await swals.fire('Eitss!', 'Nama ga boleh kosong');mulai();
                 }
             }
             
@@ -101,7 +107,7 @@ TikTok: rayyarr_
  			    kata2 = "Sebenernya, aku masih ada rasa sama " + nama + "...";
   			   katab2 = nama + " mau gak kita balik lagi kaya dulu? "; emotsenyum = "&#128578;";
   			   kata3 = "Yeyyy";
-  			   katab3 = "Oke mulai " + today + "Kita balikan :)";
+  			   katab3 = "Oke mulai " + today + " Kita balikan :)";
                  teksnolak = "Harus mau!!! ";
                  
                  pesanwhatsapp = "Iya aku mau balik lagi sama kamu ><";
